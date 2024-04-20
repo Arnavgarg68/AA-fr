@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className='navbar-main-body'>
             <div className="navbar-inner-main-body">
                 <div className="navbar-logo">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" onClick={()=>navigate("/AA-fr")}/>
                 </div>
                 <div id="navbar-elements-container">
                     <div className="navbar-container-elements">About us</div>
@@ -37,7 +37,7 @@ export default function Navbar() {
             </div>
             <div id="navbar-hamburger-menu">
                 <div className="navbar-hamburger-menu-items">About us</div>
-                <div className="navbar-hamburger-menu-items">Feedback</div>
+                <div className="navbar-hamburger-menu-items" onClick={()=>navigate('/feedback')}>Feedback</div>
                 <div className="navbar-hamburger-menu-items">Support us</div>
             </div>
         </div>

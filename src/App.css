@@ -291,6 +291,12 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 
   .footer-inner-body{
     flex-direction: column;
   }
+  .footer-map{
+    width: 90%;
+    height: 70vw;
+    min-width: 200px;
+    min-height: 200px;
+  }
   .footer-text{
     width: 70%;
     word-wrap: break-word;
