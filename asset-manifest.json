@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AA-fr/static/css/main.5cf44b5d.css",
-    "main.js": "/AA-fr/static/js/main.a69bc815.js",
+    "main.css": "/AA-fr/static/css/main.b162b9b9.css",
+    "main.js": "/AA-fr/static/js/main.276e43af.js",
     "static/js/453.419a5d54.chunk.js": "/AA-fr/static/js/453.419a5d54.chunk.js",
     "static/media/kati-basti.jpg": "/AA-fr/static/media/kati-basti.e85982d0bab7fd84881c.jpg",
     "static/media/oil-treatment.jpeg": "/AA-fr/static/media/oil-treatment.ad7812464a7c56434c6b.jpeg",
@@ -14,12 +14,12 @@
     "static/media/animabasti.jpg": "/AA-fr/static/media/animabasti.5020b635a9219ce1eacd.jpg",
     "static/media/icons8-menu.svg": "/AA-fr/static/media/icons8-menu.b048adae5924f81bbbb76df266ede6f7.svg",
     "index.html": "/AA-fr/index.html",
-    "main.5cf44b5d.css.map": "/AA-fr/static/css/main.5cf44b5d.css.map",
-    "main.a69bc815.js.map": "/AA-fr/static/js/main.a69bc815.js.map",
+    "main.b162b9b9.css.map": "/AA-fr/static/css/main.b162b9b9.css.map",
+    "main.276e43af.js.map": "/AA-fr/static/js/main.276e43af.js.map",
     "453.419a5d54.chunk.js.map": "/AA-fr/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cf44b5d.css",
-    "static/js/main.a69bc815.js"
+    "static/css/main.b162b9b9.css",
+    "static/js/main.276e43af.js"
   ]
 }
