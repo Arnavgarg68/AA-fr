@@ -69,7 +69,7 @@
 #navbar-hamburger-menu{
     margin: 1px;
     z-index: 2;
-    display: none;
+    /* display: none; */
     position:fixed;
     right: 0px;
     background-color: bisque;

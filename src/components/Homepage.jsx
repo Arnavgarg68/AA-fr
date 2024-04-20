@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 export default function Homepage() {
     const [feedbacks,setfeedbacks] = useState([]);
     const loadfeedbacks=async()=>{
-        console.log("start kardia")
+        
         const response = await fetch("https://amulyabackend.onrender.com/feedback",{
             method:"GET"
         })
@@ -21,7 +21,7 @@ export default function Homepage() {
             console.log("fetch failed");
             return
         }
-        console.log(result)
+        
         setfeedbacks(result);
     }
     useEffect(()=>{
