@@ -79,40 +79,46 @@
 .homepage-content-text>h1 {
   margin-bottom: 10px;
 }
-.homepage-feedbacks-main{
-  /* margin: 2vh 10vw; */
-}
+
 .homepage-feedbacks-inner{
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20vh;
+}
+.homepage-feedback-card:hover{
+  scale: 1.05;
 }
 .homepage-feedback-card{
   /* flex-grow: 1; */
   width: 400px;
-  min-height: 400px;
+  min-height: 300px;
   max-width: 90vw;
-  /* min-width: 400px; */
-  /* max-width: 400px; */
   padding: 40px;
-  background-color: aqua;
-  border-radius: 10px;
-
+  box-shadow: 0px 0px 5px black inset;
+  border: 2px solid black;
+  transition: all 0.2s ease-in-out;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 63%, rgba(87,245,89,1) 100%);
 }
 .homepage-feedback-card-title{
   font-size: 3rem;
   font-style: italic;
+  word-wrap: break-word;
+  color: rgb(81, 12, 12);
+  font-weight: bold;
 }
 .homepage-feedback-card-rating{
   font-size: 1.5rem;
+  color: green;
+  font-weight: bold;
 }
-.homepage-feedback-card-about{
-  font-weight: 500;
-}
+
 .homepage-feedback-card-username{
   font-style: oblique;
+  color: grey;
 }
 .homepage-feedback-card-common{
   margin: 15px;
@@ -253,4 +259,40 @@
     /* margin-right: 5vw ; */
   }
 
+}
+/* footer css */
+.footer-inner-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgb(94, 94, 245);
+}
+.footer-map{
+  width: 30vw;
+  height: 15vw;
+  min-width: 200px;
+  min-height: 200px;
+  box-shadow: 0px 0px 10px  black;
+}
+.footer-iframe{
+  width: 100%;
+  height: 100%;
+}
+.footer-text{
+  width: 30vw;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width:500px){
+  .footer-inner-body{
+    flex-direction: column;
+  }
+  .footer-text{
+    width: 70%;
+    word-wrap: break-word;
+  }
 }

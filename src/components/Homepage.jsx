@@ -86,13 +86,14 @@ export default function Homepage() {
                 "Enema Basti, also known simply as Basti or Vasti, is an Ayurvedic therapy that involves the administration of medicated oil or herbal decoctions into the rectum. It is considered one of the Panchakarma therapies, a set of detoxification and rejuvenation treatments aimed at balancing the body's doshas (energies) and promoting overall health. Enema Basti is primarily used for cleansing, detoxification, and nourishment of the lower gastrointestinal tract."</div>
         </div>
         <div className="homepage-feedbacks-main">
+                <h1 style={{textAlign:"center",marginBottom:"30px",padding:"20px",boxShadow:"0px 0px 5px black inset"}}>Customers feedback</h1>
             <div className="homepage-feedbacks-inner">
                 {
                     feedbacks.map((e)=>(
-                <div className="homepage-feedback-card" key={e.id}>
+                <div className="homepage-feedback-card" key={e.id} data-aos="zoom-in">
                     <div className="homepage-feedback-card-title homepage-feedback-card-common">{e.title}</div>
                     <div className="homepage-feedback-card-rating homepage-feedback-card-common">Rating: {e.rating}/5</div>
-                    <div className="homepage-feedback-card-about homepage-feedback-card-common">{e.about}</div>
+                    <div className="homepage-feedback-card-about homepage-feedback-card-common">"{e.about}"</div>
                     <div className="homepage-feedback-card-username homepage-feedback-card-common">by "{e.username}"</div>
                 </div>
                     ))
@@ -100,6 +101,7 @@ export default function Homepage() {
                 
             </div>
         </div>
+        
       </div>
     </div>
   )
