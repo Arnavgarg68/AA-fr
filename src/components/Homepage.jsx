@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import trailvid from './558-137190717_small.mp4'
 import nasya from './nasya.avif'
 import janu from './janu-basti.jpg'
@@ -10,8 +10,22 @@ import animabasti from './animabasti.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default function Homepage() {
-
+    const [feedbacks,setfeedbacks] = useState([]);
+    const loadfeedbacks=async()=>{
+        console.log("start kardia")
+        const response = await fetch("https://amulyabackend.onrender.com/feedback",{
+            method:"GET"
+        })
+        const result = await response.json();
+        if(!response.ok){
+            console.log("fetch failed");
+            return
+        }
+        console.log(result)
+        setfeedbacks(result);
+    }
     useEffect(()=>{
+        loadfeedbacks();
         AOS.init();
     },[])
   return (
@@ -70,6 +84,21 @@ export default function Homepage() {
             <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                 <h1>Enema (basti)  therapy</h1>
                 "Enema Basti, also known simply as Basti or Vasti, is an Ayurvedic therapy that involves the administration of medicated oil or herbal decoctions into the rectum. It is considered one of the Panchakarma therapies, a set of detoxification and rejuvenation treatments aimed at balancing the body's doshas (energies) and promoting overall health. Enema Basti is primarily used for cleansing, detoxification, and nourishment of the lower gastrointestinal tract."</div>
+        </div>
+        <div className="homepage-feedbacks-main">
+            <div className="homepage-feedbacks-inner">
+                {
+                    feedbacks.map((e)=>(
+                <div className="homepage-feedback-card" key={e.id}>
+                    <div className="homepage-feedback-card-title homepage-feedback-card-common">{e.title}</div>
+                    <div className="homepage-feedback-card-rating homepage-feedback-card-common">Rating: {e.rating}/5</div>
+                    <div className="homepage-feedback-card-about homepage-feedback-card-common">{e.about}</div>
+                    <div className="homepage-feedback-card-username homepage-feedback-card-common">by "{e.username}"</div>
+                </div>
+                    ))
+                }
+                
+            </div>
         </div>
       </div>
     </div>
