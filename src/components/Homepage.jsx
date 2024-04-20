@@ -24,7 +24,7 @@ export default function Homepage() {
                 Lets take a step forward towards a healthy lifestye!!
             </span>
             <span className='homepage-span' data-aos="zoom-in" data-aos-duration="2000">
-                Scroll down to get started <span className='homepage-arrow'>🡻</span>
+                <span className='homepage-arrow' style={{fontWeight:"bold"}}>Scroll down to get started !!</span>
             </span >
             </div>
         </div>

@@ -54,6 +54,7 @@
   gap: 40px;
   background-color: rgba(0, 0, 0, 0.229);
   padding: 10px;
+  border-radius: 10px;
 }
 .homepage-contentbox>img,.homepage-contentbox>video{
   height: 30vw;
@@ -64,6 +65,9 @@
 }
 .homepage-content-text{
   font-size: 1.5rem;
+}
+.homepage-content-text>h1{
+  margin-bottom: 10px;
 }
 @keyframes moveupdown {
   0%{
@@ -80,6 +84,10 @@
 {
   .homepage-span{
     font-size: 2rem;
+  }
+  .homepage-content-text{
+    font-size: 1.1rem;
+    text-align: justify;
   }
 }
 @media screen and (max-width:800px){
