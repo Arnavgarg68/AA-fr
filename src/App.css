@@ -11,11 +11,86 @@
   display: block;
   margin: auto;
   height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: aqua;
   background: url('./components/oil-treatment.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
+  position: relative;
+}
+.homepage-span-diver{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  backdrop-filter: brightness(70%);
+  /* height: 100; */
+  margin-bottom: 100vh;
+}
+.homepage-span{
+  font-size: 3rem;
+  display: block;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  text-shadow: 1px 1px 10px black;
+  font-family: "Work Sans", sans-serif;
+  /* background-color: rgba(0, 0, 0, 0.27); */
+}
+.homepage-arrow{
+  animation: moveupdown 3s ease-in-out infinite;
+  animation-fill-mode:forwards;
+}
+.homepage-contentbox{
+  margin: 10vh 2vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.229);
+  padding: 10px;
+}
+.homepage-contentbox>img,.homepage-contentbox>video{
+  height: 30vw;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
   
+}
+.homepage-content-text{
+  font-size: 1.5rem;
+}
+@keyframes moveupdown {
+  0%{
+    color: green;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: orange;
+  }
+}
+@media screen and (max-width:500px)
+{
+  .homepage-span{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:800px){
+  .homepage-contentbox{
+    flex-direction: column;
+    text-align: center;
+  }
+  .homepage-contentbox>img{
+    height: 28vh;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
 }

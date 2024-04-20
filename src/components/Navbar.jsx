@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navbars.css'
-import logo from './amuyla-ayurved-high-resolution-logo-black-transparent (1).png'
+import logo from './amulya-ayurved-high-resolution-logo-transparent.png'
 import menuLogo from './icons8-menu.svg'
 export default function Navbar() {
     const [burgermenu, setBurgermenu] = useState(false);
