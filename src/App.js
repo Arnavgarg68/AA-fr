@@ -1,13 +1,19 @@
 import './App.css';
+import Feedback from './components/Feedback';
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Homepage/>
-    </>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route exact path='/home' element={<Homepage/>}/>
+        <Route exact path='/feedback' element={<Feedback/>}/>
+      </Routes>
+    </Router>
+    
   );
 }
 

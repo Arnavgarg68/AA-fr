@@ -1,13 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Homepage css */
-.homepage-main-body{
+.homepage-main-body {
   margin-top: 10vh;
 }
-.homepage-main-image{
+
+.homepage-main-image {
   display: block;
   margin: auto;
   height: 90vh;
@@ -16,20 +18,22 @@
   background: url('./components/oil-treatment.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   position: relative;
 }
-.homepage-span-diver{
+
+.homepage-span-diver {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   backdrop-filter: brightness(70%);
   /* height: 100; */
   margin-bottom: 100vh;
 }
-.homepage-span{
+
+.homepage-span {
   font-size: 3rem;
   display: block;
   max-width: 1100px;
@@ -41,11 +45,13 @@
   font-family: "Work Sans", sans-serif;
   /* background-color: rgba(0, 0, 0, 0.27); */
 }
-.homepage-arrow{
+
+.homepage-arrow {
   animation: moveupdown 3s ease-in-out infinite;
-  animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
 }
-.homepage-contentbox{
+
+.homepage-contentbox {
   margin: 10vh 2vw;
   /* height: 100vh; */
   display: flex;
@@ -56,49 +62,154 @@
   padding: 10px;
   border-radius: 10px;
 }
-.homepage-contentbox>img,.homepage-contentbox>video{
+
+.homepage-contentbox>img,
+.homepage-contentbox>video {
   height: 30vw;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
-  
+
 }
-.homepage-content-text{
+
+.homepage-content-text {
   font-size: 1.5rem;
 }
-.homepage-content-text>h1{
+
+.homepage-content-text>h1 {
   margin-bottom: 10px;
 }
+
 @keyframes moveupdown {
-  0%{
+  0% {
     color: green;
   }
-  50%{
+
+  50% {
     color: white;
   }
-  100%{
+
+  100% {
     color: orange;
   }
 }
-@media screen and (max-width:500px)
-{
-  .homepage-span{
+
+@media screen and (max-width:500px) {
+  .homepage-span {
     font-size: 2rem;
   }
-  .homepage-content-text{
+
+  .homepage-content-text {
     font-size: 1.1rem;
     text-align: justify;
   }
 }
-@media screen and (max-width:800px){
-  .homepage-contentbox{
+
+@media screen and (max-width:800px) {
+  .homepage-contentbox {
     flex-direction: column;
     text-align: center;
   }
-  .homepage-contentbox>img{
+
+  .homepage-contentbox>img {
     height: 28vh;
     padding: 10px;
     background-color: white;
     border-radius: 10px;
   }
+}
+
+/* feedback form css */
+
+
+.feedback-main-inner-body {
+  min-height:100vh;
+  /* width: 100vw; */
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(149,247,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(59, 219, 59);
+  border-radius: 10px;
+  padding: 20px;
+  width: 95vw;
+  max-width: 700px;
+
+}
+.feedback-form>h1{
+  color: white;
+}
+.feedback-input {
+  width: 80vw;
+  padding: 5px 20px;
+  height: 40px;
+  margin: 20px;
+  font-size: 1.2rem;
+  max-width: 500px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+#feedback-textarea {
+  /* max-width: 0vw; */
+  resize: none;
+  height: 20vh;
+  padding-top: 20px;
+}
+
+.feedback-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 20px;
+}
+
+.feedback-rating>label {
+  font-size: 1.2rem;
+  padding: 10px;
+  /* margin-right: 5vw ; */
+}
+
+#feedback-stars {
+  width: 50%;
+  font-size: 1rem;
+  text-align: center;
+  /* margin-left: 10px; */
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.feedback-submit{
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: orange;
+  border: none;
+  box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  .feedback-rating {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feedback-rating>label {
+    margin: 20px auto;
+    /* margin-right: 5vw ; */
+  }
+
 }

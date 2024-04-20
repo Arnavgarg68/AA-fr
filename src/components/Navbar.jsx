@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import './navbars.css'
 import logo from './amulya-ayurved-high-resolution-logo-transparent.png'
 import menuLogo from './icons8-menu.svg'
+import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
     const [burgermenu, setBurgermenu] = useState(false);
-    
+    const navigate = useNavigate();
     
     const handleSideMenu = () => {
         let menunavbar = document.getElementById('navbar-hamburger-menu');
@@ -24,7 +25,7 @@ export default function Navbar() {
                 </div>
                 <div id="navbar-elements-container">
                     <div className="navbar-container-elements">About us</div>
-                    <div className="navbar-container-elements">Feedback</div>
+                    <div className="navbar-container-elements" onClick={()=>navigate('/feedback')}>Feedback</div>
                     <div className="navbar-container-elements navbar-support">Support us</div>
                 </div>
                 <div className="navbar-hamburger">
