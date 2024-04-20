@@ -13,9 +13,9 @@ export default function Footer() {
         <hr />
         <br/>
         <h4>Contact us:</h4>
-        <a href="tel:+1234567890" style={{color:"white",marginTop:"15px"}}>+91-7417099103</a>
+        <a href="tel:7417099103" style={{color:"white",marginTop:"15px"}}>+91-7417099103</a>
         <br/>
-        <a href="tel:+1234567890" style={{color:"white",marginTop:"15px"}}>+91-8755356180</a>
+        <a href="tel:8755356180" style={{color:"white",marginTop:"15px"}}>+91-8755356180</a>
       </div>
       </div>
     </div>
