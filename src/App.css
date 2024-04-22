@@ -3,7 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* common css */
+::-webkit-scrollbar{
+  width: 4px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: green;
+  border-radius: 10px;
+}
 /* Homepage css */
 .homepage-main-body {
   margin-top: 10vh;
@@ -83,25 +90,50 @@
 .homepage-feedbacks-inner{
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 20vh;
+  user-select: none;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around;
+  align-items: center; */
+  margin-bottom: 10vh;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px ;
+  overflow-x:scroll;
 }
-.homepage-feedback-card:hover{
-  scale: 1.05;
+.homepage-feedbacks-inner::-webkit-scrollbar{
+  background-color: aqua;
+  height: 10px;
 }
+.homepage-feedbacks-inner::-webkit-scrollbar-thumb {
+  background-color: orange; 
+  border-radius: 5px; /* Border radius of the thumb */
+}
+
+.homepage-feedbacks-inner::-webkit-scrollbar-thumb:hover {
+  /* Set styles for the thumb when hovered */
+  background-color: rgb(255, 192, 74); /* Background color of the thumb on hover */
+}
+
+.homepage-feedbacks-inner::-webkit-scrollbar-track {
+  /* Set styles for the track (the area where the thumb moves) */
+  background-color: #eee; /* Background color of the track */
+  border-radius: 5px;
+}
+
 .homepage-feedback-card{
   /* flex-grow: 1; */
-  width: 400px;
-  min-height: 300px;
-  max-width: 90vw;
+  min-width: 400px;
+  height: 400px;
+  /* margin-left:40px; */
+  /* max-width: 90vw; */
   padding: 40px;
-  box-shadow: 0px 0px 5px black inset;
+  box-shadow: 0px 0px 10px black ;
+  /* z-index: 10000000; */
   border: 2px solid black;
   transition: all 0.2s ease-in-out;
   background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 63%, rgba(87,245,89,1) 100%);
+  background: url("./white-abstract-background.avif");
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 63%, rgba(87,245,89,1) 100%); */
 }
 .homepage-feedback-card-title{
   font-size: 3rem;
@@ -149,6 +181,16 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 
   }
   .homepage-feedback-card-title{
     font-size: 2rem;
+    /* background-color: green; */
+  }
+  .homepage-feedback-card{
+    /* flex-grow: 1; */
+    min-width: 350px;
+    height: 350px;
+    margin-left:40px;
+    /* max-width: 90vw; */
+    padding: 40px;
+    
   }
 }
 
@@ -269,6 +311,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(216,246,211,1) 
   gap: 40px;
   padding-bottom: 20px;
   padding-top: 20px;
+  
   background-color: rgb(94, 94, 245);
 }
 .footer-map{

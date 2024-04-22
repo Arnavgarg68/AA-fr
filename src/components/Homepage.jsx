@@ -10,9 +10,11 @@ import swedanatherapy from './swedana-therapy.jpg'
 import animabasti from './animabasti.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import { GoChevronRight , GoChevronLeft , GoArrowDown} from "react-icons/go";
 export default function Homepage() {
     const [feedbacks, setfeedbacks] = useState([]);
     const [loader, setloader] = useState(true);
+
     const loadfeedbacks = async () => {
 
         const response = await fetch("https://amulyabackend.onrender.com/feedback", {
@@ -89,16 +91,16 @@ export default function Homepage() {
                         "Enema Basti, also known simply as Basti or Vasti, is an Ayurvedic therapy that involves the administration of medicated oil or herbal decoctions into the rectum. It is considered one of the Panchakarma therapies, a set of detoxification and rejuvenation treatments aimed at balancing the body's doshas (energies) and promoting overall health. Enema Basti is primarily used for cleansing, detoxification, and nourishment of the lower gastrointestinal tract."</div>
                 </div>
                 <div className="homepage-feedbacks-main" style={{ position: "relative" }}>
-                    <h1 style={{ textAlign: "center", marginBottom: "30px", padding: "20px", boxShadow: "0px 0px 5px black inset" }}>Customers feedback</h1>
+                    <h1 style={{ textAlign: "center", marginBottom: "30px", padding: "20px", boxShadow: "0px 0px 5px black inset" }}>Customers feedback </h1>
                     {
                         loader ? (<div className="lo" style={{ position: "absolute", top: "50%", left: "50%", zIndex: "10000000" }}>
                             <Loaderelement color='green' size={60} />
-                        </div>) :(<></>)
-                }
-
-
-
+                        </div>) : (<></>)
+                    }
+                        
                     <div className="homepage-feedbacks-inner">
+                    
+                    
                         {
                             feedbacks.map((e) => (
                                 <div className="homepage-feedback-card" key={e.id} data-aos="zoom-in">
@@ -109,6 +111,7 @@ export default function Homepage() {
                                 </div>
                             ))
                         }
+                        
 
                     </div>
                 </div>
