@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route exact path='/' element={<Homepage/>}/>
+        <Route path='/' element={<Homepage/>}/>
         <Route exact path='/feedback' element={<Feedback/>}/>
       </Routes>
       <Footer/>
