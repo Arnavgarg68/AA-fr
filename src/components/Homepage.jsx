@@ -14,7 +14,8 @@ import 'aos/dist/aos.css';
 export default function Homepage() {
     const [feedbacks, setfeedbacks] = useState([]);
     const [loader, setloader] = useState(true);
-
+    
+    
     const loadfeedbacks = async () => {
 
         const response = await fetch("https://amulyabackend.onrender.com/feedback", {
@@ -32,6 +33,7 @@ export default function Homepage() {
     useEffect(() => {
         loadfeedbacks();
         AOS.init();
+        
     }, [])
     return (
         <div className='homepage-main-body'>
@@ -40,7 +42,7 @@ export default function Homepage() {
                     <div className="homepage-span-diver" >
 
                         <span className='homepage-span' data-aos="zoom-in" data-aos-duration="2000" >
-                            Lets take a step forward towards a healthy lifestye!!
+                        Lets take a step forward towards a healthy lifestye!!
                         </span>
                         <span className='homepage-span' data-aos="zoom-in" data-aos-duration="2000">
                             <span className='homepage-arrow' style={{ fontWeight: "bold" }}>Scroll down to get started !!</span>

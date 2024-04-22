@@ -39,7 +39,7 @@ export default function Feedback() {
       return
     }
     alert("your response is recorded thank you!!")
-    navigate('/AA-fr')
+    navigate('/')
     setFormdata({
       username:"",
     title:"",
