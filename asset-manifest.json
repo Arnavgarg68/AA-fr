@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AA-fr/static/css/main.5029feb9.css",
-    "main.js": "/AA-fr/static/js/main.c7130739.js",
+    "main.css": "/AA-fr/static/css/main.5835e542.css",
+    "main.js": "/AA-fr/static/js/main.bf8b573e.js",
     "static/js/453.419a5d54.chunk.js": "/AA-fr/static/js/453.419a5d54.chunk.js",
     "static/media/kati-basti.jpg": "/AA-fr/static/media/kati-basti.e85982d0bab7fd84881c.jpg",
     "static/media/oil-treatment.jpeg": "/AA-fr/static/media/oil-treatment.ad7812464a7c56434c6b.jpeg",
@@ -10,17 +10,18 @@
     "static/media/swedana-therapy.jpg": "/AA-fr/static/media/swedana-therapy.435c3cdf6ca14d9d0c19.jpg",
     "static/media/janu-basti.jpg": "/AA-fr/static/media/janu-basti.7a2c94178b799fb640a2.jpg",
     "static/media/amulya-ayurved-high-resolution-logo-transparent.png": "/AA-fr/static/media/amulya-ayurved-high-resolution-logo-transparent.d1c71c2aa66c79366153.png",
+    "static/media/leech.png": "/AA-fr/static/media/leech.241a5da0563e5dc30c4f.png",
     "static/media/nasya.avif": "/AA-fr/static/media/nasya.34b42cf51a823ad92a9e.avif",
     "static/media/animabasti.jpg": "/AA-fr/static/media/animabasti.5020b635a9219ce1eacd.jpg",
     "static/media/white-abstract-background.avif": "/AA-fr/static/media/white-abstract-background.ed1e825ed3fe2c67fb8a.avif",
     "static/media/icons8-menu.svg": "/AA-fr/static/media/icons8-menu.b048adae5924f81bbbb76df266ede6f7.svg",
     "index.html": "/AA-fr/index.html",
-    "main.5029feb9.css.map": "/AA-fr/static/css/main.5029feb9.css.map",
-    "main.c7130739.js.map": "/AA-fr/static/js/main.c7130739.js.map",
+    "main.5835e542.css.map": "/AA-fr/static/css/main.5835e542.css.map",
+    "main.bf8b573e.js.map": "/AA-fr/static/js/main.bf8b573e.js.map",
     "453.419a5d54.chunk.js.map": "/AA-fr/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5029feb9.css",
-    "static/js/main.c7130739.js"
+    "static/css/main.5835e542.css",
+    "static/js/main.bf8b573e.js"
   ]
 }
