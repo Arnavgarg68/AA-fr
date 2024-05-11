@@ -24,7 +24,8 @@ export default function Navbar() {
         <div className='navbar-main-body'>
             <div className="navbar-inner-main-body">
                 <div className="navbar-logo">
-                    <img src={logo} alt="" onClick={()=>navigate("/AA-fr")}/>
+                    {/* <img src={logo} alt="" onClick={()=>navigate("/AA-fr")}/> */}
+                    <img src={logo} alt="" onClick={()=>navigate("/")}/>
                 </div>
                 <div id="navbar-elements-container">
                     <div className="navbar-container-elements">
