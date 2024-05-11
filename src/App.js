@@ -3,7 +3,7 @@ import Feedback from './components/Feedback';
 import Footer from './components/Footer';
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import {HashRouter as Router,Route,Routes} from 'react-router-dom'
 
 function App() {
   return (
