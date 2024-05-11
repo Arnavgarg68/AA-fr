@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Loaderelement from 'react-spinners/ClipLoader'
 // import trailvid from './558-137190717_small.mp4'
 import nasya from './nasya.avif'
+import leech from './leech.png'
 import janu from './janu-basti.jpg'
 import abhyanga from './abhyanga.jpg'
 import patrapindaswedana from './patra-pinda-swedana.jpg'
@@ -49,44 +50,50 @@ export default function Homepage() {
                         </span >
                     </div>
                 </div>
-                <div className="homepage-contentbox" >
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000" >
                     <img src={nasya} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Nasya Therapy</h1>
                         " Nasya is a therapeutic procedure in Ayurveda that involves the administration of herbal oils or powders into the nasal passages. It is considered one of the Panchakarma therapies, a set of detoxification and rejuvenation treatments aimed at balancing the body's doshas (energies) and promoting overall health."</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000" >
+                    <img src={leech} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
+                    <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
+                        <h1>Leech Therapy</h1>
+                        " Leech therapy offers a range of benefits, from improving blood circulation and reducing pain to accelerating wound healing and detoxifying the blood. Its natural compounds alleviate inflammation and aid in skin rejuvenation, making it a versatile and non-invasive option for holistic healing and cosmetic enhancement and relief in Varicose Veins."</div>
+                </div>
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={janu} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Janu Basti Therapy</h1>
                         "Janu Basti" is an Ayurvedic therapy specifically targeting knee health. It falls under the category of "Basti" therapies, which involve the application of medicated oils or herbal decoctions in a dough dam to a particular area of the body. This localized treatment is believed to be effective in managing various musculoskeletal issues, particularly those affecting the knees.</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={abhyanga} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Abhyanga Therapy</h1>
                         "Abhyanga is a traditional Ayurvedic massage therapy that involves the application of warm oil to the entire body, followed by gentle, rhythmic massage. It is considered one of the most important self-care practices in Ayurveda and has been practiced for thousands of years for its numerous health benefits."</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={patrapindaswedana} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Patra pinda swedana</h1>
 
                         "Patra Pinda Swedana, also known as PPS or Patra Potli, is an Ayurvedic therapy that involves the application of warm herbal poultices to the body. This therapy combines the benefits of heat therapy (swedana) with the therapeutic properties of medicinal herbs (patra) to promote relaxation, reduce pain, and detoxify the body."</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={katibasti} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Kati basti  therapy</h1>
                         "Kati Basti is an Ayurvedic therapy that specifically targets the lower back region (kati) by applying warm medicated oil to the area and creating a reservoir using a dough ring or dam (basti). This localized treatment is particularly beneficial for addressing lower back pain, stiffness, and related musculoskeletal issues. "</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={swedanatherapy} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Swedana Therapy</h1>
                         "Swedana is a traditional Ayurvedic therapy that involves the application of heat to the body to induce sweating and promote detoxification. It is considered one of the Panchakarma therapies, a set of detoxification and rejuvenation treatments aimed at balancing the body's doshas (energies) and promoting overall health."</div>
                 </div>
-                <div className="homepage-contentbox">
+                <div className="homepage-contentbox" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={animabasti} alt="ok" data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="homepage-content-text" data-aos="zoom-in" data-aos-duration="2000">
                         <h1>Enema (basti)  therapy</h1>
